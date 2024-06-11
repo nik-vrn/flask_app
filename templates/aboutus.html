@@ -1,0 +1,77 @@
+{% extends 'layout.html' %}
+
+{% block title %}About us{% endblock %}
+
+{% block head %}
+{{super()}}
+{% endblock %}
+
+{% block content %}
+
+    <h2 style="text-align: center;">About Trinomial Technologies</h2>  
+
+    <h2 style="text-align: center;">Who We Are</h2>
+
+    <h4>Research, Develop, Advance, and Inspire With Trinomial Technologies</h4>  
+
+    <p>We are your partner for all your research and development needs. At Trinomial Technologies we transform your ideas and business needs into intelligent, bespoke operational and intuitive digital solutions. With more than ten years of research and development expertise, our researchers and developers can provide a wide range of expert services and deliver results and state-of-the-art products by exploiting cutting-edge research and innovative technologies.</p>  
+
+    <p>Following streamlined processes, we serve our customers for all their business needs. We are committed to providing our clients with innovative technologies and to assisting them in every step of the digital transformation of their brand or novel solution.</p>  
+
+    <h4>Our Mission</h4>  
+
+    <p>Our mission is to help our clients advance and inspire by offering valuable software solutions. We aim at providing research and innovation services to businesses and organizations, while developing and prototyping innovative solutions and products.</p>  
+
+    <h4>Our Vision</h4>  
+
+    <p>Trinomial aims at becoming the leading research and innovation provider, while creating partnerships that will lead to the development of successful innovative products</p>  
+
+    <h4>Our Values</h4>  
+
+    <p>Integrity, Quality, Creativity, Innovation, and Our People.</p>  
+
+    <h2>Schedule a Meeting</h2>
+        <form action="/contact" method="POST">
+          <div>
+            <input type="text" name="name" placeholder="Full Name" minlength="5" required/>
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="Email Address" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required/>
+          </div>
+          <div>
+            <input type="company-name" name="company-name" placeholder="Company Name (if available)"/>
+          </div>
+          <select id="select" name="service" required>
+            <option value="">Type of Service</option>
+            <option value="Website Develompent">Website Develompent</option>
+            <option value="Mobile Application Develompent">Mobile Application Develompent</option>
+            <option value="Costum Software Develompent">Costum Software Develompent</option>
+            <option value="Digital Transformation Consulting">Digital Transformation Consulting</option>
+            <option value="Business Consulting">Business Consulting</option>
+            <option value="Research and Innovation">Research and Innovation</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+            <option value="Big Data Analysis">Big Data Analysis</option>
+          </select>
+          <div>
+            <input type="radio" name="gender" value="male" checked="checked"> Male
+            <input type="radio" name="gender" value="female"> Female
+          </div>
+          <div>
+            <input type="date" name="begin" placeholder="DD-MM-YYYY" value="" min="1954-12-31" max="2006-12-31">
+          </div>
+          <div>
+            <textarea name="message" rows="4" placeholder="Please describe your project's needs"></textarea>
+          </div>
+          <div>
+            <input type="checkbox" name="data" required>
+            <label for="data">I agree with the processing of my personal data</label><br>
+        </div>
+          <p>By submitting this form, you accept that your data will be securely stored and processed within our tools. Your data will be used with caution, aiming to give us a better understanding of your needs as well as helping us to reach back to you with the relevant information. For more information please check our</p><a href='/privacypolicy'>Privacy Policy.</a>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+{% endblock %}
