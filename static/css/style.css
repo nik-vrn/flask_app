@@ -1,0 +1,85 @@
+.index-h1{
+    color: #3c1361;
+    position: absolute; /*position in center*/
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%); /*center vertically and horizontally*/
+}
+
+body{
+    background-image: url("/static/css/technology.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    
+}
+
+.transparent-navbar {
+    background-color: transparent !important; 
+}
+
+.navbar-brand{
+    color: #3c1361;
+}
+
+.navbar .nav-link {
+    color: #3c1361; 
+}
+
+.h2-aboutus{
+    text-align: center;
+    color: #3c1361;
+}
+
+.h4-aboutus{
+    text-align: center;
+    color: #3c1361;
+}
+
+.container{
+    text-align: center;
+}
+.p_aboutus{
+    border-radius: 25px;
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.form_aboutus{
+    border-radius: 25px;
+    color: #3c1361;
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.form{
+    border-radius: 25px;
+    color: black;
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.h1-privacypolicy{
+    text-align: center;
+    color: #3c1361;
+}
+
+.h2-privacypolicy{
+    text-align: center;
+    color: #3c1361;
+}
+
+.p-privacypolicy{
+    border-radius: 25px;
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
